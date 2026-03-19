@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172034;
+}
+
+.topbar {
+  background: #1d3557;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #f1faee;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 24px auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.property-card h3 {
+  margin: 0 0 8px;
+}
+
+.property-card a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-section {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+input,
+textarea {
+  border: 1px solid #cfd8e6;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  background: #457b9d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.panel {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.muted {
+  color: #5f6d82;
+}

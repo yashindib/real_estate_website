@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeEstate</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>PrimeEstate</h1>
+      <p>Find your next dream property</p>
+      <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./listings.html">Listings</a>
+        <a href="./property.html?id=1">Property</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Available Properties</h2>
+        <div id="property-list" class="property-grid"></div>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+        <p id="form-status"></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
